@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alejandro Ruiz Navarrete — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="nav-name">arn<span>.</span>dev</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="nav-cta">Microweb ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="terminal">
+      <span class="prompt">~$</span>
+      <span id="typed"></span>
+      <span class="cursor"></span>
+    </div>
+    <h1 class="hero-name">Alejandro<br><em>Ruiz Navarrete</em></h1>
+    <p class="hero-role">Mathematics &amp; Computer Engineering · Sevilla</p>
+    <p class="hero-sub">I build things that work: from Bayesian optimization pipelines for autonomous racing to landing pages that get local businesses online.</p>
+    <div class="hero-links">
+      <a href="#projects" class="link-primary">See my work →</a>
+      <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="link-ghost">Microweb ↗</a>
+      <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="link-ghost">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/" target="_blank" rel="noopener" class="link-ghost">LinkedIn ↗</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Building real things while studying hard ones.</h2>
+        <p>I'm a third-year double-degree student in Mathematics and Computer Engineering. I work in the perception department of ARUS, a Formula Student autonomous racing team, where I develop SLAM and Gaussian process pipelines.</p>
+        <p>Alongside my studies, I co-founded Microweb — a small web development business building fast, affordable landing pages for local businesses that lack an online presence.</p>
+        <p>I like problems that sit at the intersection of rigorous theory and practical results.</p>
+      </div>
+      <div class="skills-block">
+        <div class="skill-group">
+          <span class="skill-group-label">Languages</span>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Tools & Frameworks</span>
+          <div class="skill-tags">
+            <span class="tag">ROS2</span>
+            <span class="tag">scikit-optimize</span>
+            <span class="tag">Git</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Areas</span>
+          <div class="skill-tags">
+            <span class="tag">SLAM</span>
+            <span class="tag">Gaussian Processes</span>
+            <span class="tag">Bayesian Optimization</span>
+            <span class="tag">Web Development</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Currently studying</span>
+          <div class="skill-tags">
+            <span class="tag">Measure Theory</span>
+            <span class="tag">Multivariable Calculus</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-label">Projects</div>
+    <div class="projects">
+
+      <div class="project-card">
+        <div>
+          <div class="project-meta">
+            <span class="project-type">Web · Business</span>
+            <span class="project-status"><span class="status-dot"></span>Active</span>
+          </div>
+          <h3>Microweb</h3>
+          <p>A freelance web development business building fast, affordable landing pages for local businesses. Custom design, WhatsApp integration, mobile-first, deployed in under a week from €50.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Formspree</span>
+          </div>
+        </div>
+        <div class="project-link-col">
+          <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="project-link">Live site ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <div class="project-meta">
+            <span class="project-type">Robotics · Research</span>
+            <span class="project-status"><span class="status-dot"></span>Active</span>
+          </div>
+          <h3>SLAM Gaussian Process Tuner</h3>
+          <p>Bayesian optimization pipeline to auto-tune SLAM parameters for an autonomous Formula Student car. A C++ ROS2 node computes ATE against ground truth; a Python script drives the optimization loop using scikit-optimize's gp_minimize.</p>
+          <div class="project-stack">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">ROS2</span>
+            <span class="tag">scikit-optimize</span>
+            <span class="tag">Gaussian Processes</span>
+            <span class="tag">SLAM</span>
+          </div>
+        </div>
+        <div class="project-link-col">
+          <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card project-dim">
+        <div>
+          <div class="project-meta">
+            <span class="project-type">Coming soon</span>
+          </div>
+          <h3>Next project</h3>
+          <p>More coming soon.</p>
+        </div>
+        <div class="project-link-col"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-label">Contact</div>
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2>Let's work on something together.</h2>
+        <p>Whether it's a web project, a technical collaboration, or just a question — feel free to reach out.</p>
+      </div>
+      <div class="contact-options">
+        <a href="mailto:ruiz.navarrete.alejandro@gmail.com" class="contact-option">
+          <div class="contact-option-icon">✉️</div>
+          <div class="contact-option-text">
+            <strong>Email</strong>
+            <span>ruiz.navarrete.alejandro@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://aretia.netlify.app#contacto" target="_blank" rel="noopener" class="contact-option">
+          <div class="contact-option-icon">🌐</div>
+          <div class="contact-option-text">
+            <strong>Microweb</strong>
+            <span>aretia.netlify.app</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/" target="_blank" rel="noopener" class="contact-option">
+          <div class="contact-option-icon">💼</div>
+          <div class="contact-option-text">
+            <strong>LinkedIn</strong>
+            <span>/in/alejandro-ruiz-navarrete-808698268</span>
+          </div>
+        </a>
+        <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="contact-option">
+          <div class="contact-option-icon">🐙</div>
+          <div class="contact-option-text">
+            <strong>GitHub</strong>
+            <span>/lp05arn</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Alejandro Ruiz Navarrete · 2026</span>
+    <span>Built by hand. No templates.</span>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

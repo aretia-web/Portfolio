@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-arn",
+  "version": "1.0.0",
+  "description": "Personal developer portfolio — Alejandro Ruiz Navarrete",
+  "private": true,
+  "scripts": {
+    "serve": "npx serve ."
+  },
+  "license": "UNLICENSED"
+}
