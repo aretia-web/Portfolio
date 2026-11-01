@@ -4,13 +4,46 @@
   var root = document.documentElement;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Language strings ---------- */
+  var lang = (root.getAttribute('lang') || 'en').slice(0, 2);
+  var STR = {
+    en: {
+      phrases: [
+        'whoami → co-founder & cto @ deskly',
+        'ls projects/ → deskly, slam-gp, microweb',
+        'deskly --where → your office, your network',
+        'git status → shipping',
+      ],
+      toLight: 'Switch to light mode', toDark: 'Switch to dark mode',
+      openMenu: 'Open menu', closeMenu: 'Close menu',
+      copied: '✓ Copied ',
+    },
+    es: {
+      phrases: [
+        'whoami → cofundador y cto @ deskly',
+        'ls proyectos/ → deskly, slam-gp, microweb',
+        'deskly --donde → tu oficina, tu red',
+        'git status → enviando a producción',
+      ],
+      toLight: 'Cambiar a modo claro', toDark: 'Cambiar a modo oscuro',
+      openMenu: 'Abrir menú', closeMenu: 'Cerrar menú',
+      copied: '✓ Copiado ',
+    },
+  };
+  var T = STR[lang] || STR.en;
+  var phrases = T.phrases;
+
+  /* ---------- Language switch: remember the choice ---------- */
+  var langLink = document.querySelector('.lang-switch');
+  if (langLink) {
+    langLink.addEventListener('click', function () {
+      try { localStorage.setItem('lang', langLink.getAttribute('data-lang')); } catch (e) {}
+      // keep the current section when switching language
+      if (location.hash) langLink.setAttribute('href', langLink.getAttribute('href').split('#')[0] + location.hash);
+    });
+  }
+
   /* ---------- Terminal typewriter ---------- */
-  var phrases = [
-    'whoami → co-founder & cto @ deskly',
-    'ls projects/ → deskly, slam-gp-tuner, microweb',
-    'cat interests.txt → maths, robotics, product',
-    'git status → shipping',
-  ];
   var typed = document.getElementById('typed');
 
   if (typed) {
@@ -44,7 +77,7 @@
   function syncThemeBtn() {
     if (!themeBtn) return;
     var dark = currentTheme() === 'dark';
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    themeBtn.setAttribute('aria-label', dark ? T.toLight : T.toDark);
     themeBtn.setAttribute('aria-pressed', String(dark));
   }
   if (themeBtn) {
@@ -64,13 +97,13 @@
     if (!navLinks) return;
     navLinks.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.setAttribute('aria-label', 'Open menu');
+    navToggle.setAttribute('aria-label', T.openMenu);
   }
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', function () {
       var open = navLinks.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', String(open));
-      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      navToggle.setAttribute('aria-label', open ? T.closeMenu : T.openMenu);
     });
     navLinks.addEventListener('click', function (e) {
       if (e.target.closest('a')) closeMenu();
@@ -131,7 +164,7 @@
       }
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(email).then(
-          function () { done('✓ Copied ' + email); },
+          function () { done(T.copied + email); },
           function () { done(email); }
         );
       } else {
