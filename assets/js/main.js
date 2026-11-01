@@ -16,7 +16,7 @@
       ],
       toLight: 'Switch to light mode', toDark: 'Switch to dark mode',
       openMenu: 'Open menu', closeMenu: 'Close menu',
-      copied: '✓ Copied ',
+      copied: '✓ Email copied: ',
     },
     es: {
       phrases: [
@@ -27,7 +27,7 @@
       ],
       toLight: 'Cambiar a modo claro', toDark: 'Cambiar a modo oscuro',
       openMenu: 'Abrir menú', closeMenu: 'Cerrar menú',
-      copied: '✓ Copiado ',
+      copied: '✓ Correo copiado: ',
     },
   };
   var T = STR[lang] || STR.en;
