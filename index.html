@@ -3,210 +3,363 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alejandro Ruiz Navarrete — Developer</title>
+<title>Alejandro Ruiz Navarrete — Co-founder &amp; CTO at Deskly · Developer</title>
+<meta name="description" content="Alejandro Ruiz Navarrete — Co-founder &amp; CTO at Deskly, Mathematics &amp; Computer Engineering student in Sevilla. Autonomous racing perception at ARUS, web products at Microweb.">
+<meta name="author" content="Alejandro Ruiz Navarrete">
+<meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1120" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Alejandro Ruiz Navarrete — Co-founder &amp; CTO at Deskly">
+<meta property="og:description" content="Mathematics &amp; Computer Engineering · Sevilla. Building Deskly, autonomous racing perception at ARUS, and web products at Microweb.">
+<meta property="profile:first_name" content="Alejandro">
+<meta property="profile:last_name" content="Ruiz Navarrete">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- Apply saved / system theme before first paint to avoid a flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alejandro Ruiz Navarrete",
+  "jobTitle": "Co-founder & CTO",
+  "worksFor": { "@type": "Organization", "name": "Deskly", "url": "https://desklyy.com" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Sevilla", "addressCountry": "ES" },
+  "email": "mailto:ruiz.navarrete.alejandro@gmail.com",
+  "knowsAbout": ["Software Engineering", "Mathematics", "SLAM", "Gaussian Processes", "Bayesian Optimization", "Web Development"],
+  "sameAs": [
+    "https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/",
+    "https://github.com/lp05arn"
+  ]
+}
+</script>
 </head>
 <body>
 
-<nav>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" aria-label="Main">
   <div class="wrap">
-    <a href="#" class="nav-name">arn<span>.</span>dev</a>
-    <div class="nav-links">
+    <a href="#top" class="nav-name" aria-label="Alejandro Ruiz Navarrete — home">arn<span>.</span>dev</a>
+
+    <div class="nav-links" id="nav-links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="nav-cta">Microweb ↗</a>
+      <a href="https://desklyy.com" target="_blank" rel="noopener" class="nav-cta">Deskly <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </div>
 </nav>
 
-<header class="hero">
+<main id="main">
+
+<header class="hero" id="top">
   <div class="wrap">
-    <div class="terminal">
+    <div class="terminal" aria-hidden="true">
       <span class="prompt">~$</span>
-      <span id="typed"></span>
+      <span id="typed">whoami → builder</span>
       <span class="cursor"></span>
     </div>
+
     <h1 class="hero-name">Alejandro<br><em>Ruiz Navarrete</em></h1>
-    <p class="hero-role">Mathematics &amp; Computer Engineering · Sevilla</p>
-    <p class="hero-sub">I build things that work: from Bayesian optimization pipelines for autonomous racing to landing pages that get local businesses online.</p>
+    <p class="hero-role">Co-founder &amp; CTO @ Deskly · Mathematics &amp; Computer Engineering · Sevilla</p>
+    <p class="hero-sub">I build things that work — from a startup's tech stack, to Bayesian optimization pipelines for autonomous racing, to landing pages that get local businesses online.</p>
+
     <div class="hero-links">
-      <a href="#projects" class="link-primary">See my work →</a>
-      <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="link-ghost">Microweb ↗</a>
-      <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="link-ghost">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/" target="_blank" rel="noopener" class="link-ghost">LinkedIn ↗</a>
+      <a href="#projects" class="btn btn-primary">See my work <span aria-hidden="true">→</span></a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
     </div>
+
+    <ul class="now-strip" aria-label="What I'm doing now">
+      <li><span class="now-dot" aria-hidden="true"></span><strong>Deskly</strong> Co-founder &amp; CTO</li>
+      <li><span class="now-dot" aria-hidden="true"></span><strong>ARUS</strong> Perception · Formula Student</li>
+      <li><span class="now-dot" aria-hidden="true"></span><strong>Microweb</strong> Co-founder</li>
+    </ul>
   </div>
 </header>
 
-<section id="about">
+<section id="about" aria-labelledby="about-title">
   <div class="wrap">
-    <div class="section-label">About</div>
+    <p class="section-label">01 · About</p>
     <div class="about-grid">
-      <div class="about-text">
-        <h2>Building real things while studying hard ones.</h2>
-        <p>I'm a fourth-year double-degree student in Mathematics and Computer Engineering. I work in the perception department of ARUS, a Formula Student autonomous racing team, where I develop SLAM and Gaussian process pipelines.</p>
-        <p>Alongside my studies, I co-founded Microweb — a small web development business building fast, affordable landing pages for local businesses that lack an online presence.</p>
-        <p>I like problems that sit at the intersection of rigorous theory and practical results.</p>
+      <div class="about-text reveal">
+        <h2 id="about-title">Building real things while studying hard ones.</h2>
+        <p>I'm a fourth-year double-degree student in Mathematics and Computer Engineering in Sevilla. I like problems that sit at the intersection of rigorous theory and practical results.</p>
+        <p>I'm the <strong>co-founder and CTO of <a href="https://desklyy.com" target="_blank" rel="noopener">Deskly</a></strong>, where I lead the technology: architecture, engineering and the product's technical roadmap.</p>
+        <p>I also work in the perception department of <strong>ARUS</strong>, a Formula Student autonomous racing team, developing SLAM and Gaussian process pipelines — and I co-founded <strong>Microweb</strong>, a small studio building fast, affordable landing pages for local businesses.</p>
       </div>
-      <div class="skills-block">
+
+      <div class="skills-block reveal">
         <div class="skill-group">
-          <span class="skill-group-label">Languages</span>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">C++</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML/CSS</span>
-            <span class="tag">SQL</span>
-          </div>
+          <h3 class="skill-group-label">Languages</h3>
+          <ul class="skill-tags">
+            <li class="tag">Python</li>
+            <li class="tag">C++</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">HTML/CSS</li>
+            <li class="tag">SQL</li>
+          </ul>
         </div>
         <div class="skill-group">
-          <span class="skill-group-label">Tools & Frameworks</span>
-          <div class="skill-tags">
-            <span class="tag">ROS2</span>
-            <span class="tag">scikit-optimize</span>
-            <span class="tag">Git</span>
-            <span class="tag">Netlify</span>
-            <span class="tag">NumPy</span>
-          </div>
+          <h3 class="skill-group-label">Tools &amp; Frameworks</h3>
+          <ul class="skill-tags">
+            <li class="tag">ROS2</li>
+            <li class="tag">NumPy</li>
+            <li class="tag">scikit-optimize</li>
+            <li class="tag">Git</li>
+            <li class="tag">Netlify</li>
+          </ul>
         </div>
         <div class="skill-group">
-          <span class="skill-group-label">Areas</span>
-          <div class="skill-tags">
-            <span class="tag">SLAM</span>
-            <span class="tag">Gaussian Processes</span>
-            <span class="tag">Bayesian Optimization</span>
-            <span class="tag">Web Development</span>
-          </div>
+          <h3 class="skill-group-label">Areas</h3>
+          <ul class="skill-tags">
+            <li class="tag">Product &amp; Tech Leadership</li>
+            <li class="tag">SLAM</li>
+            <li class="tag">Gaussian Processes</li>
+            <li class="tag">Bayesian Optimization</li>
+            <li class="tag">Web Development</li>
+          </ul>
         </div>
         <div class="skill-group">
-          <span class="skill-group-label">Currently studying</span>
-          <div class="skill-tags">
-            <span class="tag">Measure Theory</span>
-            <span class="tag">Multivariable Calculus</span>
-            <span class="tag">Algorithms</span>
-          </div>
+          <h3 class="skill-group-label">Currently studying</h3>
+          <ul class="skill-tags">
+            <li class="tag">Measure Theory</li>
+            <li class="tag">Multivariable Calculus</li>
+            <li class="tag">Algorithms</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="projects">
+<section id="experience" aria-labelledby="experience-title">
   <div class="wrap">
-    <div class="section-label">Projects</div>
+    <p class="section-label">02 · Experience</p>
+    <h2 id="experience-title" class="visually-hidden">Experience</h2>
+
+    <ol class="timeline">
+      <li class="tl-item reveal">
+        <div class="tl-when">Now</div>
+        <div class="tl-body">
+          <h3>Co-founder &amp; CTO <span class="tl-at">· <a href="https://desklyy.com" target="_blank" rel="noopener">Deskly</a></span></h3>
+          <p>Co-founded the company and lead everything technical: system architecture, engineering decisions and turning the product vision into shipped software.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-when">Now</div>
+        <div class="tl-body">
+          <h3>Perception Engineer <span class="tl-at">· ARUS Formula Student</span></h3>
+          <p>Perception department of an autonomous racing team. SLAM and Gaussian process pipelines in C++/ROS2 and Python.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-when">Now</div>
+        <div class="tl-body">
+          <h3>Co-founder <span class="tl-at">· <a href="https://aretia.netlify.app" target="_blank" rel="noopener">Microweb</a></span></h3>
+          <p>Small web studio: custom, mobile-first landing pages for local businesses with no online presence, shipped in under a week.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-when">4th year</div>
+        <div class="tl-body">
+          <h3>Double Degree in Mathematics &amp; Computer Engineering <span class="tl-at">· Sevilla</span></h3>
+          <p>Currently focused on measure theory, multivariable calculus and algorithms.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <p class="section-label">03 · Projects</p>
+    <h2 id="projects-title" class="visually-hidden">Projects</h2>
+
     <div class="projects">
 
-      <div class="project-card">
+      <article class="project-card project-featured reveal">
         <div>
           <div class="project-meta">
-            <span class="project-type">Web · Business</span>
-            <span class="project-status"><span class="status-dot"></span>Active</span>
+            <span class="project-type">Startup · Co-founder &amp; CTO</span>
+            <span class="project-status"><span class="status-dot" aria-hidden="true"></span>Active</span>
           </div>
-          <h3>Microweb</h3>
-          <p>A freelance web development business building fast, affordable landing pages for local businesses. Custom design, WhatsApp integration, mobile-first, deployed in under a week from €85.</p>
-          <div class="project-stack">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Netlify</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Formspree</span>
-          </div>
+          <h3>Deskly</h3>
+          <p>The startup I co-founded and lead technically. As CTO I own the architecture and the engineering behind the product — from the first line of code to what's running in production.</p>
+          <ul class="project-stack" aria-label="My role">
+            <li class="tag">Co-founder</li>
+            <li class="tag">CTO</li>
+            <li class="tag">Architecture</li>
+            <li class="tag">Product engineering</li>
+          </ul>
         </div>
         <div class="project-link-col">
-          <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="project-link">Live site ↗</a>
+          <a href="https://desklyy.com" target="_blank" rel="noopener" class="project-link">desklyy.com <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card reveal">
         <div>
           <div class="project-meta">
             <span class="project-type">Robotics · Research</span>
-            <span class="project-status"><span class="status-dot"></span>Active</span>
+            <span class="project-status"><span class="status-dot" aria-hidden="true"></span>Active</span>
           </div>
           <h3>SLAM Gaussian Process Tuner</h3>
-          <p>Bayesian optimization pipeline to auto-tune SLAM parameters for an autonomous Formula Student car. A C++ ROS2 node computes ATE against ground truth; a Python script drives the optimization loop using scikit-optimize's gp_minimize.</p>
-          <div class="project-stack">
-            <span class="tag">Python</span>
-            <span class="tag">C++</span>
-            <span class="tag">ROS2</span>
-            <span class="tag">scikit-optimize</span>
-            <span class="tag">Gaussian Processes</span>
-            <span class="tag">SLAM</span>
-          </div>
+          <p>Bayesian optimization pipeline that auto-tunes SLAM parameters for an autonomous Formula Student car. A C++ ROS2 node computes ATE against ground truth; a Python script drives the optimization loop with scikit-optimize's <code>gp_minimize</code>.</p>
+          <ul class="project-stack" aria-label="Tech stack">
+            <li class="tag">Python</li>
+            <li class="tag">C++</li>
+            <li class="tag">ROS2</li>
+            <li class="tag">scikit-optimize</li>
+            <li class="tag">Gaussian Processes</li>
+            <li class="tag">SLAM</li>
+          </ul>
         </div>
         <div class="project-link-col">
-          <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+          <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="project-link">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card project-dim">
+      <article class="project-card reveal">
         <div>
           <div class="project-meta">
-            <span class="project-type">Coming soon</span>
+            <span class="project-type">Web · Business</span>
+            <span class="project-status"><span class="status-dot" aria-hidden="true"></span>Active</span>
           </div>
-          <h3>Next project</h3>
-          <p>More coming soon.</p>
+          <h3>Microweb</h3>
+          <p>A web studio I co-founded that builds fast, affordable landing pages for local businesses. Custom design, WhatsApp integration, mobile-first, deployed in under a week from €85.</p>
+          <ul class="project-stack" aria-label="Tech stack">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Netlify</li>
+            <li class="tag">GitHub</li>
+            <li class="tag">Formspree</li>
+          </ul>
         </div>
-        <div class="project-link-col"></div>
-      </div>
+        <div class="project-link-col">
+          <a href="https://aretia.netlify.app" target="_blank" rel="noopener" class="project-link">Live site <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
+        </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-<section id="contact" style="border-bottom:none;">
+<section id="contact" aria-labelledby="contact-title">
   <div class="wrap">
-    <div class="section-label">Contact</div>
+    <p class="section-label">04 · Contact</p>
     <div class="contact-inner">
-      <div class="contact-text">
-        <h2>Let's work on something together.</h2>
-        <p>Whether it's a web project, a technical collaboration, or just a question — feel free to reach out.</p>
+      <div class="contact-text reveal">
+        <h2 id="contact-title">Let's work on something together.</h2>
+        <p>Whether it's Deskly, a web project, a technical collaboration or just a question — feel free to reach out. I usually reply within a couple of days.</p>
+        <button type="button" class="btn btn-ghost copy-email" data-email="ruiz.navarrete.alejandro@gmail.com">
+          <span class="copy-label">Copy email address</span>
+        </button>
+        <span class="copy-status" role="status" aria-live="polite"></span>
       </div>
-      <div class="contact-options">
-        <a href="mailto:ruiz.navarrete.alejandro@gmail.com" class="contact-option">
-          <div class="contact-option-icon">✉️</div>
-          <div class="contact-option-text">
-            <strong>Email</strong>
-            <span>ruiz.navarrete.alejandro@gmail.com</span>
-          </div>
-        </a>
-        <a href="https://aretia.netlify.app#contacto" target="_blank" rel="noopener" class="contact-option">
-          <div class="contact-option-icon">🌐</div>
-          <div class="contact-option-text">
-            <strong>Microweb</strong>
-            <span>aretia.netlify.app</span>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/" target="_blank" rel="noopener" class="contact-option">
-          <div class="contact-option-icon">💼</div>
-          <div class="contact-option-text">
-            <strong>LinkedIn</strong>
-            <span>/in/alejandro-ruiz-navarrete-808698268</span>
-          </div>
-        </a>
-        <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="contact-option">
-          <div class="contact-option-icon">🐙</div>
-          <div class="contact-option-text">
-            <strong>GitHub</strong>
-            <span>/lp05arn</span>
-          </div>
-        </a>
-      </div>
+
+      <ul class="contact-options reveal">
+        <li>
+          <a href="mailto:ruiz.navarrete.alejandro@gmail.com" class="contact-option">
+            <span class="contact-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <span class="contact-option-text">
+              <strong>Email</strong>
+              <span>ruiz.navarrete.alejandro@gmail.com</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alejandro-ruiz-navarrete-808698268/" target="_blank" rel="noopener" class="contact-option">
+            <span class="contact-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+            </span>
+            <span class="contact-option-text">
+              <strong>LinkedIn</strong>
+              <span>Alejandro Ruiz Navarrete</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/lp05arn" target="_blank" rel="noopener" class="contact-option">
+            <span class="contact-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            </span>
+            <span class="contact-option-text">
+              <strong>GitHub</strong>
+              <span>@lp05arn</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://desklyy.com" target="_blank" rel="noopener" class="contact-option">
+            <span class="contact-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            </span>
+            <span class="contact-option-text">
+              <strong>Deskly</strong>
+              <span>desklyy.com</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://aretia.netlify.app#contacto" target="_blank" rel="noopener" class="contact-option">
+            <span class="contact-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </span>
+            <span class="contact-option-text">
+              <strong>Microweb</strong>
+              <span>aretia.netlify.app</span>
+            </span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
-    <span>Alejandro Ruiz Navarrete · 2026</span>
+    <span>© <span id="year">2026</span> Alejandro Ruiz Navarrete</span>
     <span>Built by hand. No templates.</span>
+    <a href="#top" class="to-top">Back to top <span aria-hidden="true">↑</span></a>
   </div>
 </footer>
+
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
