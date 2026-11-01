@@ -9,7 +9,8 @@ portfolio/
 ├── index.html              ← English version (About · Experience · Projects · Contact)
 ├── es/index.html           ← Spanish version (same structure — keep both in sync)
 ├── 404.html                ← custom not-found page (served by Netlify)
-├── netlify.toml            ← security headers + asset caching
+├── netlify.toml            ← security headers + cache rules
+├── scripts/bust-cache.py   ← adds ?v=hash to CSS/JS links (run after editing them)
 ├── robots.txt / sitemap.xml
 ├── assets/
 │   ├── css/styles.css      ← design tokens (light + dark) and all styles
@@ -33,6 +34,10 @@ Or just open `index.html` directly in the browser.
 Connected to Netlify via this repo. Every push to `main` redeploys automatically.
 
 ## Updating content
+
+> **After editing `styles.css` or `main.js`, run `python3 scripts/bust-cache.py`** before committing.
+> It updates the `?v=` in the HTML so visitors' browsers load the new files instead of a cached old copy.
+
 
 - **Texts / links**: edit `index.html` (English) **and** `es/index.html` (Spanish)
 - **Language**: Spanish-language browsers visiting `/` are sent to `/es/` on their first visit; the EN/ES button remembers the visitor's choice

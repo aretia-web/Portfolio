@@ -96,7 +96,7 @@ code {
 strong { font-weight: 600; color: var(--ink); }
 ::selection { background: var(--accent); color: var(--paper); }
 
-.wrap { max-width: 1320px; margin: 0 auto; padding: 0 48px; }
+.wrap { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 64px); }
 
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -543,7 +543,6 @@ footer .wrap { display: flex; justify-content: space-between; align-items: cente
    Responsive
    ========================================================= */
 @media (max-width: 760px) {
-  .wrap { padding: 0 20px; }
   .hero { padding: 72px 0 56px; }
   section { padding: 72px 0; }
   .contact-option { padding: 16px 18px; }
